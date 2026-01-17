@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0B0F14;
+  color: #FFFFFF;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1.6;
+}
+
+.header {
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.brand {
+  font-family: 'Stack Sans Text', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #fff;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Stack Sans Text', sans-serif;
+  font-size: 0.7rem;
+}
+
+.content-area {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 160px 40px 100px 40px;
+}
+
+.page-title {
+  font-family: 'Stack Sans Text', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.1rem;
+  margin-bottom: 60px;
+}
+
+.work-grid, .skills-grid, .contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.work-card, .skill-card, .contact-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+
+.work-card:hover, .skill-card:hover, .contact-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.contact-card img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.contact-info h3 {
+  font-family: 'Stack Sans Text', sans-serif;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.contact-info p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.icon {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.badge, .status-tag {
+  display: inline-block;
+  font-family: 'Stack Sans Text', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.learning {
+  font-family: 'Stack Sans Text', sans-serif;
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.skill-list {
+  list-style: none;
+}
+
+.skill-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-family: 'Stack Sans Text', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.marquee-wrapper {
+  margin-top: 100px;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  padding: 40px 0;
+}
+
+.marquee-content {
+  display: inline-block;
+  font-family: 'Stack Sans Text', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.05);
+  letter-spacing: 5px;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.footer {
+  padding: 60px 40px;
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+[data-en] {
+  transition: opacity 0.3s ease;
+}

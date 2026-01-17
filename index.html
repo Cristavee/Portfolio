@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Cristave</title>
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Stack+Sans+Text:wght@400;700&family=Work+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav-container">
+      <a class="brand" href="index.html">CRISTAVE</a>
+      <ul class="menu">
+        <li><a href="pages/work.html" data-en="Works" data-id="Karya">Works</a></li>
+        <li><a href="pages/skills.html" data-en="Skills" data-id="Keahlian">Skills</a></li>
+        <li><a href="pages/contact.html" data-en="Contact" data-id="Kontak">Contact</a></li>
+        <li><button id="lang-switch" class="lang-btn">EN</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <section class="profile-section">
+      <div class="avatar-container">
+        <div class="avatar-wrapper">
+          <img src="props/profile.jpg" alt="Profile" class="avatar">
+        </div>
+        <div class="status-badge">
+          <span class="dot"></span> 
+          <span data-en="Newbie" data-id="Pemula">Pemula</span>
+        </div>
+      </div>
+
+      <h1 class="title" data-en="I'm Cristave." data-id="Saya Cristave.">I'm Cristave.</h1>
+      
+      <p class="hero-desc" 
+         data-en="Beginner programmer focused on backend learnings and AI automation. Building clean and efficient digital solutions." 
+         data-id="Programmer pemula yang fokus pada pembelajaran backend dan otomasi AI. Membangun solusi digital yang bersih dan efisien.">
+         Beginner programmer focused on backend learnings and AI automation. Building clean and efficient digital solutions.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-card main-bio">
+          <span class="label" data-en="Biography" data-id="Biografi">Biography</span>
+          <p data-en="Loves logic and systems. Currently learning basic backend programming. ." 
+             data-id="Suka logika dan sistem. Saat ini sedang belajar pemrograman dasar backend.">
+             Loves logic and systems. Currently learning basic backend programming.
+          </p>
+        </div>
+        
+        <div class="info-stack">
+          <div class="info-card">
+            <span class="label" data-en="Age" data-id="Umur">Age</span>
+            <p>15 <span class="unit" data-en="y.o" data-id="thn">y.o</span></p>
+          </div>
+          <div class="info-card">
+            <span class="label" data-en="Base" data-id="Lokasi">Base</span>
+            <p>Pontianak, <span class="unit">ID</span></p>
+          </div>
+          <div class="info-card">
+  <span class="label" data-en="Current Education" data-id="Pendidikan">Current Education</span>
+  <p class="skolah" data-id="SMA NEGERI 8 PONTIANAK" data-en="8th STATE HIGH SCHOOL PONTIANAK">SMA NEGERI 8 PONTIANAK</p>
+  <p data-en="Grade 11 / XI" data-id="Kelas 11 / XI">Kelas 11 / XI</p>
+</div>
+        </div>
+      </div>
+
+      <div class="cta-group">
+        <a id="cv" href="" class="btn-primary" data-en="Download CV" data-id="Unduh CV">Download CV</a>
+      </div>
+    </section>
+    
+   <div id="custom-toast" class="toast">
+  <div class="toast-content">
+    <span class="toast-icon">✦</span>
+    <p id="toast-message"></p>
+  </div>
+</div>
+
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Cristave — Built with precision.</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
